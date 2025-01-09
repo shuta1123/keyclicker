@@ -18,6 +18,9 @@ public class count : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Return)){
             OnClick();
         }
+        if(Input.GetKeyDown(KeyCode.LeftShift)){
+            purasu+=1;
+        }
     }
         public void OnClick()
     {
