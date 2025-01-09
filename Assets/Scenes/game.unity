@@ -400,6 +400,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71955521304a54cc7b41bda3e37575db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puratxt: {fileID: 5773609965816006268, guid: b15d3cc0e96fc42408eb203010217e9f, type: 3}
+  canvas: {fileID: 1109864200}
 --- !u!1 &988597641
 GameObject:
   m_ObjectHideFlags: 0
