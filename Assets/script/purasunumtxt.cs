@@ -9,6 +9,7 @@ public class purasunumtxt : MonoBehaviour
     public TextMeshProUGUI purasunum;
     float a;
     double ti;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,7 +21,11 @@ public class purasunumtxt : MonoBehaviour
     {
         a=count.purasu;
         purasunum.text="+"+a;
-        if(Time.time-1>=ti)
+        Transform move =this.transform;
+        Vector3 vec3=move.position;
+        vec3.y+=0.2f;
+        move.position=vec3;
+        if(Time.time-0.5>=ti)
         Destroy(this.gameObject);
 
     }
