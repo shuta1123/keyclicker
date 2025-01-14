@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+
 
 public class count : MonoBehaviour
 {
@@ -24,9 +26,11 @@ public class count : MonoBehaviour
             purasu+=1;
         }
     }
+    
         public void OnClick()
     {
-        Instantiate(puratxt, new Vector3( 693.0f, 334.0f, 0.0f), Quaternion.identity,canvas);
+        Vector3 mousePosition = Input.mousePosition;
+        Instantiate(puratxt, mousePosition, Quaternion.identity,canvas);
         atai+=purasu;
         Debug.Log(atai);  // ログを出力
     }
